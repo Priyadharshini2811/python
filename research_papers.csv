@@ -1,0 +1,26 @@
+import pandas as pd
+
+# Example data
+papers = [
+    {
+        "Title": "Advancements in Biotech Research",
+        "Authors": "Dr. A Smith, Dr. B Jones",
+        "Abstract": "This paper discusses recent biotech innovations...",
+        "Published Date": "2025-01-15",
+        "Affiliation": "XYZ Biotech Solutions"
+    },
+    {
+        "Title": "Pharmaceutical Breakthroughs in 2025",
+        "Authors": "Dr. C White, Dr. D Black",
+        "Abstract": "A detailed study on pharmaceutical developments...",
+        "Published Date": "2025-02-10",
+        "Affiliation": "ABC Pharma Inc."
+    }
+]
+
+# Convert data to a DataFrame
+df = pd.DataFrame(papers)
+
+# Save to CSV
+df.to_csv("research_papers.csv", index=False)
+print("File saved successfully as research_papers.csv!")
